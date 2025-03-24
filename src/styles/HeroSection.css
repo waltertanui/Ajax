@@ -22,7 +22,7 @@
 .hero-content h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: #0070f3;
+  color: #1a5631;
 }
 
 .hero-content p {
@@ -48,12 +48,12 @@
 }
 
 .primary-btn {
-  background-color: #0070f3;
+  background-color: #1a5631;
   color: white;
 }
 
 .primary-btn:hover {
-  background-color: #005bc0;
+  background-color: #1a5631;
   transform: translateY(-2px);
 }
 
