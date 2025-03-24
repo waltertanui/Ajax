@@ -35,9 +35,9 @@ const Footer = () => {
           </div>
           <div className="footer-section">
             <h3>Contact Info</h3>
-            <p><i className="fas fa-map-marker-alt"></i> 123 Security Street, Nairobi, Kenya</p>
-            <p><i className="fas fa-phone"></i> +254 123 456 789</p>
-            <p><i className="fas fa-envelope"></i> info@ajaxtechnologies.com</p>
+            <p><i className="fas fa-map-marker-alt"></i> Park Suites, Parklands Road, Westlands</p>
+            <p><i className="fas fa-phone"></i> +254 722 114 098</p>
+            <p><i className="fas fa-envelope"></i> info@ajax.co.ke</p>
           </div>
         </div>
         <div className="footer-social">

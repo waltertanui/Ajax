@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import '../styles/ContactUs.css';
 
 const ContactUs = () => {
+  const form = useRef();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     message: '',
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,15 +23,32 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Here you would typically send the form data to a server
-    alert('Thank you for your message. We will get back to you soon!');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      message: '',
-    });
+    setIsSubmitting(true);
+    setSubmitMessage('');
+    
+    emailjs.sendForm(
+      'service_6hvw06c', 
+      'template_2jof1xr', // Fixed the typo in template ID (removed extra 't')
+      form.current,
+      'M0siBmV_02QwB81j6'
+    )
+      .then((result) => {
+        console.log('Email sent successfully:', result.text);
+        setSubmitMessage('Thank you for your message. We will get back to you soon!');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
+        });
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error.text);
+        setSubmitMessage('There was an error submitting your message. Please try again later.');
+      })
+      .finally(() => {
+        setIsSubmitting(false);
+      });
   };
 
   return (
@@ -42,21 +63,21 @@ const ContactUs = () => {
             <i className="fas fa-map-marker-alt"></i>
             <div>
               <h3>Our Location</h3>
-              <p>123 Security Street, Nairobi, Kenya</p>
+              <p>Park Suites, Parklands Road, Westlands</p>
             </div>
           </div>
           <div className="info-item">
             <i className="fas fa-phone"></i>
             <div>
               <h3>Phone Number</h3>
-              <p>+254 123 456 789</p>
+              <p>+254 722 114 098</p>
             </div>
           </div>
           <div className="info-item">
             <i className="fas fa-envelope"></i>
             <div>
               <h3>Email Address</h3>
-              <p>info@ajaxtechnologies.com</p>
+              <p>info@ajax.co.ke</p>
             </div>
           </div>
           <div className="info-item">
@@ -68,7 +89,7 @@ const ContactUs = () => {
           </div>
         </div>
         <div className="contact-form">
-          <form onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="name">Name</label>
               <input
@@ -112,9 +133,14 @@ const ContactUs = () => {
                 required
               ></textarea>
             </div>
-            <button type="submit" className="btn submit-btn">
-              Send Message
+            <button 
+              type="submit" 
+              className="btn submit-btn"
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>
+            {submitMessage && <div className="submit-message">{submitMessage}</div>}
           </form>
         </div>
       </div>
