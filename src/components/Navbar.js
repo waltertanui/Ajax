@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="navbar-logo">
           <img src="/about-ajax.jpg" alt="Ajax Technologies Logo" className="navbar-logo-img" />
           <div className="navbar-logo-text">
-            <h1>Ajax Technologies Limited</h1>
+            <h1>Ajax</h1>
             <p className="slogan">Control your space</p>
           </div>
         </div>

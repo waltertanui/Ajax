@@ -56,7 +56,7 @@ const Products = () => {
             <div className="product-info">
               <h3>{product.name}</h3>
               <p>{product.description}</p>
-              <button className="btn product-btn">Learn More</button>
+              {/* Button removed */}
             </div>
           </div>
         ))}

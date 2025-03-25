@@ -9,8 +9,8 @@ const HeroSection = () => {
         <h2>Control your space</h2>
         <p>Advanced security solutions for your home and business</p>
         <div className="hero-buttons">
-          <button className="btn primary-btn">Explore Products</button>
-          <button className="btn secondary-btn">Contact Us</button>
+          <a href="#products" className="btn primary-btn">Explore Products</a>
+          <a href="#contact" className="btn secondary-btn">Contact Us</a>
         </div>
       </div>
       <div className="hero-image">
