@@ -7,7 +7,6 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-logo">
           <img src="/about-ajax.jpg" alt="Ajax Technologies Logo" />
-          <h2>Ajax Technologies Limited</h2>
           <p>Control your space</p>
         </div>
         

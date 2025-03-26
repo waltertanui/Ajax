@@ -9,7 +9,7 @@ const Products = () => {
       id: 1,
       name: 'CCTV Systems',
       description: 'Advanced surveillance cameras for complete monitoring of your property.',
-      extendedDescription: 'Our CCTV systems offer 24/7 monitoring with high-definition cameras, night vision capabilities, and remote viewing options. Perfect for residential and commercial properties, these systems provide comprehensive coverage and peace of mind.',
+      extendedDescription: 'Explore our extensive range of high-definition security cameras, featuring robust outdoor models designed to withstand the elements and discreet indoor solutions that blend seamlessly into your environment.\n\nExpert Installation: Rely on our highly skilled and certified technicians for professional installation that guarantees optimal camera placement and maximum performance, ensuring your security needs are met with precision.\n\nCustomized Solutions: We take the time to understand your specific security requirements, working hand-in-hand with you to create a tailored surveillance system that enhances your safety with proactive measures that suit your lifestyle.\n\nSeamless Integration: Experience the convenience of a fully integrated security network by combining your CCTV system with access control and alarm solutions, providing you with a centralized hub for complete peace of mind.\n\nOngoing Support: Enjoy the confidence of knowing that our dedicated support team is available for ongoing maintenance and assistance, helping your CCTV system operate at peak performance and ensuring your security is never compromised.',
       image: 'https://plus.unsplash.com/premium_photo-1675016457613-2291390d1bf6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2N0dnxlbnwwfHwwfHx8MA%3D%3D',
     },
     {
@@ -24,27 +24,27 @@ const Products = () => {
       name: 'Video/Audio Intercoms',
       description: 'Communication systems for secure visitor management.',
       extendedDescription: 'Our video and audio intercom systems provide crystal-clear communication with visitors before granting access. Featuring HD video, two-way audio, and smartphone integration, these systems allow you to screen visitors from anywhere, enhancing security and convenience.',
-      image: 'https://media.istockphoto.com/id/1221857753/photo/grocery-delivery-person.webp?a=1&b=1&s=612x612&w=0&k=20&c=7XLeHxj871oEITyJdSrcLCBS6G9jTDzGxXXLHpd-BSQ=',
+      image: '/doorcamera.jpeg',
     },
     {
       id: 4,
-      name: 'Automated Gates',
-      description: 'Convenient and secure gate automation solutions.',
-      extendedDescription: 'Our automated gate systems combine security with convenience, allowing controlled access to your property. Available in sliding, swing, and barrier options, these gates can be integrated with access control systems and operated via remote, keypad, or smartphone app for seamless entry management.',
-      image: 'https://imgs.search.brave.com/wFe4N5orF7En4AtniAlGAxT0Otk_sv3eQ8LNfrEOM8A/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9lbWJl/ZC53aWRlbmNkbi5u/ZXQvaW1nL2NnaS9s/YWVzdGpkZ3U2LzYw/MHB4LzIwMjBfTE1f/SERfU1dfR3RlQ29t/X1JFTkRFUi5qcGVn/P2tlZXA9YyZjcm9w/PXllcyZ1PWllOHI1/bCZ1c2U9cGk1ZDI',
+      name: 'Intruder Alarm Systems',
+      description: 'Essential protection for homes, schools, and businesses from unauthorized entry.',
+      extendedDescription: 'This is essential for protecting homes, schools, and businesses from unauthorized entry, ensuring personal safety, and safeguarding against burglary and property damage.\n\nKEY FEATURES OF OUR WIRELESS ALARM SYSTEM\n1.\tComprehensive All-in-One Kit \nIt includes everything you need for effective home security, such as sensors, alarms, a control hub, a keypad, a control fob, and motion cameras.\n\n2.\tAdvanced Motion Detection\nEach kit features a Passive Infrared (PIR) motion detector that accurately detects movement and triggers the alarm when necessary. Unlike outdated systems, our Ajax motion detectors can distinguish between humans and pets, reducing false alarms.\n\n3.\tEfficient Door Detection Sensors  \nSensors are easy to install on door frames. These unobtrusive sensors provide timely alerts when a door opens while the alarm system is active. They have received multiple accolades for their performance and are ideal for monitoring both doors and windows.\n\n4.\tLong-Lasting Battery Life  \nAjax alarm system sensors boast an impressive seven-year battery life, allowing you to enjoy peace of mind with minimal maintenance.\n\n5.\tInternal and External Sirens for Enhanced Security  \nEach Ajax alarm kit includes both internal and external sirens. The Home Siren effectively alerts you to potential intrusions indoors, while the Street Siren notifies passersby and deters intruders outdoors. Both sirens feature a five-year battery life, customizable alarm sounds, and adjustable sound levels for your convenience.\nOur alarm system provides a robust solution for keeping your home secure and offer you and your loved ones the confidence and safety you deserve.',
+      image: '/Intruderalarm.jpeg',
     },
     {
       id: 5,
       name: 'Electric Fencing',
       description: 'Perimeter security solutions to protect your property.',
       extendedDescription: 'Our electric fencing solutions provide a powerful deterrent against intruders. These systems deliver a non-lethal but effective shock when tampered with and can be integrated with alarm systems to alert you of breach attempts. We offer various configurations suitable for residential, commercial, and industrial properties.',
-      image: 'https://media.istockphoto.com/id/184962823/photo/electric-fence.webp?a=1&b=1&s=612x612&w=0&k=20&c=0PnT3B1QeXOoPnd3YU3aPO1cozfaVHayGl_VC9DvLwU=',
+      image: '/electric fence.jpeg',
     },
     {
       id: 6,
       name: 'Standby Power',
       description: 'Reliable backup power solutions for uninterrupted security.',
-      extendedDescription: 'Our standby power solutions ensure your security systems remain operational during power outages. From UPS systems to solar-powered backups and generators, we provide options to maintain your security infrastructure when you need it most. All solutions are customized based on your power requirements and critical systems.',
+      extendedDescription: 'We are dedicated to providing specialized energy solutions that meet the unique needs of the East African region. Our services include solar power systems, generators, wind-powered equipment, uninterruptible power supply (UPS) systems, and reliable power backup solutions.\n\nWe supply and install solar power systems for residential homes, government buildings, commercial properties, and non-governmental organizations, particularly in remote areas that lack access to mains electricity. Our high-quality solar panels, charge controllers, inverters, and batteries come with a comprehensive warranty and are competitively priced, ensuring that you receive the best value for your investment.',
       image: 'https://plus.unsplash.com/premium_photo-1682148196781-8bbcdfd7f537?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG9tZSUyMHNvbGFyfGVufDB8fDB8fHww',
     },
   ];
@@ -76,7 +76,7 @@ const Products = () => {
                 className="btn product-btn" 
                 onClick={() => toggleDescription(product.id)}
               >
-                {expandedProduct === product.id ? 'Show Less' : 'Learn More'}
+                {expandedProduct === product.id ? 'Show Less' : 'WHY CHOOSE US'}
               </button>
             </div>
           </div>

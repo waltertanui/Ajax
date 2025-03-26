@@ -62,31 +62,22 @@ const ContactUs = () => {
           <div className="info-item">
             <i className="fas fa-map-marker-alt"></i>
             <div>
-              <h3>Our Location</h3>
               <p>Park Suites, Parklands Road, Westlands</p>
             </div>
           </div>
           <div className="info-item">
-            <i className="fas fa-phone"></i>
+            <i className="fab fa-whatsapp"></i>
             <div>
-              <h3>Phone Number</h3>
               <p>+254 722 114 098</p>
             </div>
           </div>
           <div className="info-item">
             <i className="fas fa-envelope"></i>
             <div>
-              <h3>Email Address</h3>
               <p>info@ajax.co.ke</p>
             </div>
           </div>
-          <div className="info-item">
-            <i className="fas fa-clock"></i>
-            <div>
-              <h3>Working Hours</h3>
-              <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
-            </div>
-          </div>
+          
         </div>
         <div className="contact-form">
           <form ref={form} onSubmit={handleSubmit}>
